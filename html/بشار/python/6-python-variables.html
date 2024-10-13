@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Variables</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/style-code.css" />
+	<link rel="shortcut icon" href="../imgs/icon.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+	<!-- Google AdSense -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5917188673120646" crossorigin="anonymous"></script>
+  
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+
+</head>
+  <body id="bod">
+	  
+	
+
+    <!-- Start Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <a href="../index.html" class="logo"><img src="../imgs/logo.png" alt="logo"></a>
+        <ul class="main-nav header-menu-right">
+          <li>
+            <a href="#" ><i class="bi bi-moon" id="toggleDark"></i></a>
+          </li>
+          <li>
+            <a href="../index.html"><i class="fa fa-home"></i></a>
+          </li>
+
+		<li>
+			<!-- open sidebar menu -->
+			<a class="btn btn-primary btn-customized open-menu " href="#" role="button">
+				<i class="fas fa-align-right"></i> <span></span>
+ 
+		</li>
+
+        </ul>
+      </div>
+    </header>
+	<!-- Wrapper -->
+
+		<!-- Sidebar -->
+		<nav class="sidebar" id="sidebar">
+			<!-- <div class="search">
+				<input type="text" id="mySearch" onkeyup="myFunction()"   placeholder=" إبحث ... " title="إبحث عن درس">
+			</div>-->
+			
+			<ul class="list-unstyled menu-elements " id="myMenu">
+				<li><a href="1-introduction.html">مقدمة عن البايثون</a></li>
+				<li><a href="2-install-python.html"> تنزيل لغة البايثون</a></li>
+				<li><a href="3-install-anaconda.html">Anaconda تحميل وتنصيب </a></li>
+				<li><a href="4-open-anaconda.html">Anaconda تشغيل </a></li>
+				<li><a href="5-python-syntax.html">طريقة كتابة كود البايثون</a></li>
+				<li><a href="6-python-variables.html" class="active">Variables المتغيرات</a></li>
+			
+				
+				<br>
+				<li><p>جاري اعداد المزيد من الدروس</p></li>
+					</ul>
+				</li>
+			</ul>		 
+		</nav>
+		<!-- End sidebar -->
+		
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+	
+
+<div class="next-previous">
+  <a href="5-python-syntax.html" class="previous ">&laquo; السابق</a>
+  <a href="7" class="next">التالي &raquo;</a>
+</div>
+
+<div class="container">
+<h2 class="titel" dir="auto"> التعرف علي المتغيرات <span>Variables</span></h2>
+</div>
+
+<div class="container-index">
+<div class="col-index" >
+<ul class="links-index myIndex" id="myIndex">
+<br>
+<a href="#1">طريقة انشاء متغير في البايثون </a>
+<a href="#2">طريقة معرفة نوع المتغير</a>
+<a href="#3">حالة الأحرف</a>
+
+
+<br>
+</ul>
+</div>
+</div>
+<!-- Header Close -->
+<div class="body-text" dir="auto">
+<div class="box-wrap">
+
+<div class="items" id="1">
+<h4>طريقة انشاء متغير في البايثون </h4>
+<p>المتغيرات عبارة عن مكان يتم تخزين فيه البيانات</p>
+<p>في البايثون يتم انشاء متغير في اللحظه التي تقوم فيها بتعيين قيمه لها ولا تحتاج الي تعريف نوع المتغير مثل بعض اللغات الاخري </p>
+<!-- =========== start code ==================-->
+<div class="code-text"  id="codeText" dir="auto">
+<li class="icon1 fa fa-circle"></li><li class="icon2 fa fa-circle"></li><li class="icon3 fa fa-circle"></li>
+<div class="tooltip"> 
+  <li onclick="CopyToClipboard('copyText1');return false;" onmouseout="outFunc()" class="fa fa-copy" >
+    <span class="tooltiptext " id="myTooltip"></span></li> 
+  </div>
+<div class="code"  dir="auto">
+<code id="copyText1">
+
+<p>x<span class="number"> = 10 </span></p>
+<p>y<span class="number"> = <span class="comment">"Hello"</span></span></p>
+  <p><span class="print"> print</span>(<span>x</span>)</p>
+  <p><span class="print"> print</span>(<span>y</span>)</p>
+</code>
+</div>
+
+<be>Result:</be>
+<div class="code">
+<code>
+<pre>
+ 10
+ Hello
+</pre>
+</code>
+
+</div>
+<br>
+</div>
+<!-- =========== End code ==================-->
+<!-- =========== start code ==================-->
+<p>لا يلزم الإعلان عن المتغيرات مع أي نوع ، ويمكن حتى تغيير نوع المتغير بعد تعيينه.</p>
+<div class="code-text"  id="codeText" dir="auto">
+<li class="icon1 fa fa-circle"></li><li class="icon2 fa fa-circle"></li><li class="icon3 fa fa-circle"></li>
+<div class="tooltip"> 
+  <li onclick="CopyToClipboard('copyText2');return false;" onmouseout="outFunc()" class="fa fa-copy" >
+    <span class="tooltiptext " id="myTooltip"></span></li> 
+  </div>
+<div class="code"  dir="auto">
+<code id="copyText2" class="code-width">
+
+<p>x<span class="number"> = 10 </span><span class="comment-code" >#  int x هنا نوع المتغير</span></p>
+<p>x <span class="number">=</span><span class="comment"> "Hello"</span><span class="comment-code" ># str نص x الأن اصبح نوع المتغير </span></p>
+  <p><span class="print"> print</span>(<span>x</span>)</p>
+  <p class="comment-code"># سوف نحصل علي اخر قيمة للمتغير</p>
+</code>
+</div>
+
+<be>Result:</be>
+<div class="code">
+<code>
+<pre>
+ Hello
+</pre>
+</code>
+
+</div>
+<br>
+</div>
+
+<!-- =========== End code ==================-->
+<!-- =========== start code ==================-->
+<p>إذا كنت ترغب في تحديد نوع بيانات  المتغير، فيمكن القيام بذلك كما في الكود التالي:</p>
+<div class="code-text"  id="codeText" dir="auto">
+<li class="icon1 fa fa-circle"></li><li class="icon2 fa fa-circle"></li><li class="icon3 fa fa-circle"></li>
+<div class="tooltip"> 
+  <li onclick="CopyToClipboard('copyText3');return false;" onmouseout="outFunc()" class="fa fa-copy" >
+    <span class="tooltiptext " id="myTooltip"></span></li> 
+  </div>
+<div class="code"  dir="auto">
+<code id="copyText3" class="code-width">
+
+    <p>x = <span class="comment">str</span>(<span >50</span>) <span class="comment-code"># str أنه نص x هنا قمنا بتعريف نوع المتغير</span></p>
+    <p>y = <span class="comment">int</span>(<span >50</span>) <span class="comment-code"># int أنه عدد صحيح y هنا قمنا بتعريف نوع المتغير</span></p>
+    <p>z = <span class="comment">float</span>(<span >50</span>) <span class="comment-code"># float أنه عدد عشري z هنا قمنا بتعريف نوع المتغير</span></p>
+    <p>s = <span class="comment">bool</span>(<span >0</span>) <span class="comment-code"># (True او 1  False 0) bool أنه s هنا قمنا بتعريف نوع المتغير</span></p>
+
+    <p><span class="print"> print</span>(<span class="comment">'x =' </span>,<span>x</span>)</p>
+    <p><span class="print"> print</span>(<span class="comment">'y =' </span>,<span>y</span>)</p>
+    <p><span class="print"> print</span>(<span class="comment">'z =' </span>,<span>z</span>)</p>
+    <p><span class="print"> print</span>(<span class="comment">'s =' </span>,<span>s</span>)</p>
+
+
+</code>
+</div>
+
+<be>Result:</be>
+<div class="code">
+<code>
+<pre>
+ x = '50'
+ y = 50
+ z = 50.0
+ s = False
+</pre>
+</code>
+
+</div>
+<br>
+</div>
+<!-- =========== End code ==================-->
+
+
+
+</div>
+
+<div class="items" id="2">
+  <h4>طريقة معرفة نوع المتغير</h4>
+<p>يمكنك معرفة نوع المتغير من خلال استخدام دالة <span>()type</span> كما في الكود التالي:</p>
+<!-- =========== start code ==================-->
+<div class="code-text"  id="codeText" dir="auto">
+<li class="icon1 fa fa-circle"></li><li class="icon2 fa fa-circle"></li><li class="icon3 fa fa-circle"></li>
+<div class="tooltip"> 
+  <li onclick="CopyToClipboard('copyText4');return false;" onmouseout="outFunc()" class="fa fa-copy" >
+    <span class="tooltiptext " id="myTooltip"></span></li> 
+  </div>
+<div class="code"  dir="auto">
+<code id="copyText4" class="code-width">
+
+    <p>x = <span >"Python"</span> </p>
+    <p>y = <span >50</span> </p>
+    <p>z = <span >50.5</span> </p>
+    <p>s = <span >True</span> </p>
+
+    <p><span class="print"> print</span>(<span class="comment">'x =' </span>,<span class="if">type</span>(<span >x</span>))<span class="comment-code"># x لمعرفة نوع المتغير </span></p>
+    <p><span class="print"> print</span>(<span class="comment">'y =' </span>,<span class="if">type</span>(<span >y</span>))<span class="comment-code"># y لمعرفة نوع المتغير </span></p>
+    <p><span class="print"> print</span>(<span class="comment">'z =' </span>,<span class="if">type</span>(<span >z</span>))<span class="comment-code"># z لمعرفة نوع المتغير </span></p>
+    <p><span class="print"> print</span>(<span class="comment">'s =' </span>,<span class="if">type</span>(<span >s</span>))<span class="comment-code"># s لمعرفة نوع المتغير </span></p>
+
+    
+</code>
+</div>
+
+<be>Result:</be>
+<div class="code">
+<code>
+<pre>
+ x = str
+ y = int
+ z = float
+ s = bool
+</pre>
+</code>
+
+</div>
+<br>
+</div>
+<!-- =========== End code ==================-->
+
+</div>
+
+<div class="items" id="3">
+  <h4>حالة الأحرف</h4>
+<p> البايثون حساسه اتجاه الأحرف اختلاف اللغات الأخري , في البايثون اذا كان الحرف capital حرف كبير اختلاف small حرف صغير كما في المثال التالي:</p>
+<!-- =========== start code ==================-->
+<div class="code-text"  id="codeText" dir="auto">
+<li class="icon1 fa fa-circle"></li><li class="icon2 fa fa-circle"></li><li class="icon3 fa fa-circle"></li>
+<div class="tooltip"> 
+  <li onclick="CopyToClipboard('copyText5');return false;" onmouseout="outFunc()" class="fa fa-copy" >
+    <span class="tooltiptext " id="myTooltip"></span></li> 
+  </div>
+<div class="code"  dir="auto">
+<code id="copyText5" class="code-width">
+
+    <p>a = <span >"Python"</span><span class="comment-code"># str نص a هنا نوع المتغير </span></p>
+    <p>A = <span >50</span><span class="comment-code"># int عدد صحيح A هنا نوع المتغير </span></p>
+  
+    <p><span class="print"> print</span>(<span class="comment">'a =' </span>,<span >a</span>)</p>
+    <p><span class="print"> print</span>(<span class="comment">'A =' </span>,<span >A</span>)</p>
+  
+</code>
+</div>
+
+<be>Result:</be>
+<div class="code">
+<code>
+<pre>
+ a = Python
+ A = 50
+</pre>
+</code>
+
+</div>
+<br>
+</div>
+<!-- =========== End code ==================-->
+</div>
+
+</div>
+</div>
+<div class="next-previous">
+  <a href="5-python-syntax.html" class="previous ">&laquo; السابق</a>
+  <a href="7" class="next">التالي &raquo;</a>
+</div>
+
+<!--<a href="#" class="previous round">&#8249;</a>
+<a href="#" class="next round">&#8250;</a> -->
+<hr class="footer-line">
+
+ <!-- Start Footer -->
+ <div class="footer">
+  <div class="container">
+    <div class="box">
+    <img src="../imgs/logo.png" id="About">
+    
+    <p class="text" dir="auto">
+      موقع spider هو موقع تعليمي يسعي الي تمكين اي شخص حتي واذا لم يستخدم الحاسوب من قبل من تعلم البرمجة بشكل مبسط وسهل وبناء برامج بكل سهولة 
+    </p>
+    </div>
+    <div class="box">
+    <ul class="links">
+      <li><a href="../index.html#Courses">Courses</a></li>
+            <li><a href="1-introduction.html">Python Basics</a></li>
+            <li><a href="../soon.html">Computer Vision</a></li>
+            <li><a href="../soon.html">Machine Learning</a></li>
+    </ul>
+    </div>
+    <div class="box">
+    <div class="line">
+      <i class="fas fa-map-marker-alt fa-fw"></i>
+      <div class="info">Egypt, Asyut</div>
+    </div>
+    <div class="line">
+      <i class="fa fa-envelope "></i>
+      <div class="info">spiderwebsite986@gmail.com</div>
+    </div>
+     
+    </div>
+    <div class="box footer-gallery">
+    <!-- Start testimonials -->
+    <div class="box-testimonials" id="Contact">
+    <img src="../imgs/99.png" alt="" />
+    <h4>Yasser Bader</h4>
+    <span class="title">مؤسس ومطور الموقع<br>
+    </span>
+    <hr>
+    <span class="title">حسابات الموقع</span>
+      <ul class="social">
+      <li>
+        <a href="https://www.facebook.com/groups/1336329700236658/?ref=share" class="facebook">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://mobile.twitter.com/spider_website" class="twitter">
+        <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.me/+4HXoRaWmFqo0NTQ8" class="facebook">
+        <i class="fab fa-telegram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/groups/9243191" class="linkedin">
+        <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      </ul>
+    </div>
+  <!-- End testimonials -->
+    </div>
+  </div>
+  <p class="copyright" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"> Copyright 2022 <i class="fa fa-copyright"></i><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> Spider website</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Yasser Bader</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+  </div>
+  <!-- End Footer -->
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery.waypoints.min.js"></script>
+  <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/scripts.js"></script>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
